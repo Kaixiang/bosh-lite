@@ -1,8 +1,8 @@
 Vagrant.configure('2') do |config|
   config.vm.hostname='bosh-lite'
 
-  config.vm.box = 'precise64'
-  config.vm.box_url = 'http://files.vagrantup.com/precise64.box'
+  config.vm.box = 'lucid64'
+  config.vm.box_url = 'http://files.vagrantup.com/lucid64.box'
 
   config.vm.provider :vmware_fusion do |v, override|
     override.vm.box_url = 'http://files.vagrantup.com/precise64_vmware.box'
